@@ -8,12 +8,12 @@ const WeatherApp = () => {
         <>
             <div className="box">
                 <div className="inputData">
-                    <input type="search" onChange={handleInput} className="inputField"/>
+                    <input type="search" onChange={handleInput} className="inputField" />
                 </div>
 
                 <div className="info">
                     <h2 className="location">
-                        Dehradun
+                        Delhi
                     </h2>
                     <h1 className="temperature">
                         10°C
