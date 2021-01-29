@@ -21,6 +21,9 @@ const WeatherApp = () => {
                     <h3 className="temp_min-max">
                         Min : 9°C | Max : 11°C
                     </h3>
+                    <div className="wave -one"></div>
+                    <div className="wave -two"></div>
+                    <div className="wave -three"></div>
                 </div>
             </div>
         </>

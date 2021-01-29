@@ -13,8 +13,16 @@ body {
   width: 100vw;
 }
 
+html {
+  font-size: 100%;
+  height: 100%;
+  background: #eee;
+}
+
+/****************** CLASSES *****************/
+
 .box {
-  width: 25vw;
+  width: 27vw;
   height: 60vh;
   border-radius: 0.5rem;
   box-shadow: 0 0.2rem 3rem rgba(0,0,0,0.2);
@@ -66,23 +74,60 @@ body {
 }
 
 .location {
-  margin-top: -5.5rem;
+  margin-top: -4.5rem;
   text-align: center;
   font-weight: 800;
-  font-size: 2.5rem;
+  font-size: 3rem;
   text-transform: capitalize;
 }
 
 .temperature {
-  margin-top: 2.5rem;
+  margin-top: 4rem;
   text-align: center;
   font-size: 3rem;
 }
 
 .temp_min-max {
   text-align: center;
-  margin-top: 0.3rem;
+  margin-top: 0.5rem;
   font-weight: 300;
   font-size: 1.2rem;
   color: yellow
+}
+
+.wave {
+  opacity: 0.3;
+  position: absolute;
+  top: 140%;
+  left: 50%;
+  background: white;
+  width: 50rem;
+  height: 50rem;
+  margin-left: -25rem;
+  margin-top: -20rem;
+  transform-origin: 50% 48%;
+  border-radius: 43%;
+  animation: drift 3000ms infinite linear;
+  z-index: 1;
+}
+
+.wave.-three {
+  animation: drift 5000ms infinite linear;
+  z-index: 2 !important;
+  opacity: 0.2;
+}
+
+.wave.-two {
+  animation: drift 7000ms infinite linear;
+  z-index: 3 !important;
+  opacity: 0.1;
+}
+
+@keyframes drift {
+  from {
+    transform: rotate(0deg);
+  }
+  from {
+    transform: rotate(360deg);
+  }
 }
