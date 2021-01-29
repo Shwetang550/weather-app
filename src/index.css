@@ -13,6 +13,12 @@ body {
   width: 100vw;
 }
 
+body > span {
+  width: 100vw;
+  text-align: center;
+  color: green;
+}
+
 html {
   font-size: 100%;
   height: 100%;
@@ -81,6 +87,41 @@ html {
   text-transform: capitalize;
 }
 
+.fa-street-view {
+  animation: rotates 3s linear infinite alternate;
+}
+
+@keyframes rotates {
+  from {
+    transform: translateX(-0.5rem);
+  }
+  to {
+    transform: translateX(0.5rem);
+  }
+}
+
+#weathercon {
+  height: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+ #weathercon .fas {
+  font-size: 4rem;
+  animation: fas-anime 3s linear infinite alternate;
+}
+
+@keyframes fas-anime {
+  from {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+
 .temperature {
   margin-top: 4rem;
   text-align: center;
@@ -131,3 +172,29 @@ html {
     transform: rotate(360deg);
   }
 }
+
+@media (max-width: 600px) {
+  .box {
+    width: 90vw;
+    height: 80vh;
+  }
+  .wave {
+    top: 85%;
+  }
+  #weathercon {
+    font-size: 5em;
+  }
+  .info {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .box {
+    height: 80vh;
+  }
+  .wave {
+    top: 115%;
+  }
+}
+
