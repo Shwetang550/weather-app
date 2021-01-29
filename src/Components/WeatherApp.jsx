@@ -31,7 +31,7 @@ const WeatherApp = () => {
                 </div>
 
                 {!place ? (
-                    <p> Place not found !</p>
+                    <p className="error"> Place not found !</p>
                 ) : ( 
                     <div>
                         <div className="info">

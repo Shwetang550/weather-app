@@ -100,15 +100,15 @@ html {
   }
 }
 
-#weathercon {
+/* #weathercon {
   height: 55%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 3rem;
-}
+} */
 
- #weathercon .fas {
+.fas {
   font-size: 4rem;
   animation: fas-anime 3s linear infinite alternate;
 }
@@ -162,6 +162,12 @@ html {
   animation: drift 7000ms infinite linear;
   z-index: 3 !important;
   opacity: 0.1;
+}
+
+.error {
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem auto;
 }
 
 @keyframes drift {
