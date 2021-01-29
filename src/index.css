@@ -1,75 +1,47 @@
 * {
-  margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  margin: 0;
 }
 
-.main_div {
-  width: 100%;
+body {
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   height: 100vh;
-  position: relative;
+  width: 100vw;
 }
 
 .box {
-  width: 400px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 50px;
-  background: rgba(0, 0, 0, 0.8);
-  border-radius: 10px;
-}
-
-.box h1 {
-  margin-bottom: 25px;
-  color: #fff;
-  text-align: center;
-  text-transform: capitalize;
-}
-
-.box .input-box {
+  width: 25vw;
+  height: 60vh;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.2rem 3rem rgba(0,0,0,0.2);
+  background: blue;
   position: relative;
+  overflow: hidden;
+  transform: translate3d(0,0,0);
+  min-width: 20rem;
+  min-height: 35rem;
 }
 
-.box .input-box input {
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  letter-spacing: 1px;
-  color: #fff;
-  margin-bottom: 30px;
-  border: none;
-  border-bottom: 1px solid #fff;
-  background: transparent;
-  outline: none;
-}
-
-.box .input-box label {
-  position: absolute;
+.box::after {
+  content: "";
+  display: block;
+  left: 0;
   top: 0;
-  left: 0;
-  letter-spacing: 1px;
-  padding: 10px 0;
-  font-size: 16px;
-  color: #fff;
-  transition: 0.5s;
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+  transform: translate3d(0,0,0);
 }
 
-.box input[type="submit"] {
-  background: transparent;
-  border: none;
+.inputField {
+  width: 50%;
+  margin: auto;
+  border-radius: 5rem;
+  padding: 1rem 1rem;
   outline: none;
-  color: #fff;
-  background: #03a9f4;
-  padding: 9px 18px;
-  border-radius: 5px;
-  font-size: 14px;
-}
-
-.box .input-box input:focus~label, .box .input-box input:valid~label {
-  top: -20px;
-  left: 0;
-  font-size: 12px;
-  color: #03a9f4;
+  font-size: 1.5rem;
 }

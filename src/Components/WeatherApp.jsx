@@ -2,7 +2,13 @@ import React from 'react';
 
 const WeatherApp = () => {
     return ( 
-        <h1>Hello World</h1>
+        <>
+            <div className="box">
+                <div className="inputData">
+                    <input type="search" className="inputField"/>
+                </div>
+            </div>
+        </>
     );
 }
  
