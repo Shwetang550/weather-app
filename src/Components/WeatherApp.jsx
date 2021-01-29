@@ -13,7 +13,7 @@ const WeatherApp = () => {
 
                 <div className="info">
                     <h2 className="location">
-                        Delhi
+                        Uttarakhand
                     </h2>
                     <h1 className="temperature">
                         10°C
