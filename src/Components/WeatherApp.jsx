@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import '../Components/styles.css/index.css';
 
 const WeatherApp = () => {
     const [place, setPlace] = useState("");
