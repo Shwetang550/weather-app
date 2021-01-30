@@ -27,10 +27,11 @@ const WeatherApp = () => {
         <>
             <div className="box">
                 <div className="inputData">
-                    <input type="search" value={search} onChange={handleInput} className="inputField" />
+                    <input type="search" value={search} placeholder="City" onChange={handleInput} className="inputField" />
                 </div>
 
-                {!place ? (
+                {
+                    !place ? (
                     <p className="error"> Place not found !</p>
                 ) : ( 
                     <div>

@@ -1,22 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
 * {
   padding: 0;
   margin: 0;
 }
 
 body {
-  background: red;
+  background: #72b3ae;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   height: 100vh;
   width: 100vw;
-}
-
-body > span {
-  width: 100vw;
-  text-align: center;
-  color: green;
+  font-family: 'Play', sans-serif;
+  color: #131313;
 }
 
 html {
@@ -32,7 +30,7 @@ html {
   height: 60vh;
   border-radius: 0.5rem;
   box-shadow: 0 0.2rem 3rem rgba(0,0,0,0.2);
-  background: blue;
+  background: #5284ce;
   position: relative;
   overflow: hidden;
   transform: translate3d(0,0,0);
@@ -100,14 +98,6 @@ html {
   }
 }
 
-/* #weathercon {
-  height: 55%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 3rem;
-} */
-
 .fas {
   font-size: 4rem;
   animation: fas-anime 3s linear infinite alternate;
@@ -130,10 +120,10 @@ html {
 
 .temp_min-max {
   text-align: center;
-  margin-top: 0.5rem;
+  margin-top: 0.7rem;
   font-weight: 300;
   font-size: 1.2rem;
-  color: yellow
+  color: #eeeeee;
 }
 
 .wave {
