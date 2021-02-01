@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import '../Components/styles.css/index.css';
+require('dotenv').config()
+
+const app_id = process.env.APP_ID;
 
 const WeatherApp = () => {
     const [place, setPlace] = useState("");
@@ -8,7 +11,7 @@ const WeatherApp = () => {
 
     useEffect(() => {
         const fetchApi = async () => {
-            const url = `http://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=8f9b5c95e274770016c9537586e353c7`;
+            const url = `http://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=${app_id}`;
             const response = await fetch(url);
 
             const resJson = await response.json();
@@ -21,7 +24,6 @@ const WeatherApp = () => {
 
     const handleInput = (event) => { 
         setSearch(event.target.value);
-
     };
 
     return ( 
