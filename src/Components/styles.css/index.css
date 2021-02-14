@@ -6,7 +6,7 @@
 }
 
 body {
-  background: #72b3ae;
+  background: #eeeeee;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,13 +14,12 @@ body {
   height: 100vh;
   width: 100vw;
   font-family: 'Play', sans-serif;
-  color: #131313;
+  color: #ffffff;
 }
 
 html {
   font-size: 100%;
   height: 100%;
-  background: #eee;
 }
 
 /****************** CLASSES *****************/
@@ -30,7 +29,7 @@ html {
   height: 60vh;
   border-radius: 0.5rem;
   box-shadow: 0 0.2rem 3rem rgba(0,0,0,0.2);
-  background: #5284ce;
+  background: #3a4750;
   position: relative;
   overflow: hidden;
   transform: translate3d(0,0,0);
@@ -123,7 +122,7 @@ html {
   margin-top: 0.7rem;
   font-weight: 300;
   font-size: 1.2rem;
-  color: #eeeeee;
+  color: #ffffff;
 }
 
 .wave {
@@ -131,7 +130,7 @@ html {
   position: absolute;
   top: 140%;
   left: 50%;
-  background: white;
+  background: #bdf1f6;
   width: 50rem;
   height: 50rem;
   margin-left: -25rem;
