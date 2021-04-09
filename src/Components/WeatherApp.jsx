@@ -1,3 +1,7 @@
+
+// Developed by - Shwetang
+// Github - https://github.com/Shwetang550
+
 import React, { useEffect, useState } from 'react';
 import '../Components/styles.css/index.css';
 require('dotenv').config()
