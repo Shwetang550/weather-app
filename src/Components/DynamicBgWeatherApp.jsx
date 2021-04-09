@@ -1,3 +1,7 @@
+
+// Developed by - Shwetang
+// Github - https://github.com/Shwetang550
+
 import React from 'react';
 
 const DynamicBgWeatherApp = () => {
